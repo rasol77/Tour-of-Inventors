@@ -1,7 +1,7 @@
 import { Hero } from "./heroes/hero";
 
 export const HEROES: Hero[] = [
-  {id:11, name: 'Arquimedes', invent: 'Principio de Arquimedes'},
+  {id:11, name: 'Arquímedes', invent: 'Principio de Arquímedes'},
   { id: 12, name: 'L. Da Vinci', invent: 'Paracáidas'},
    { id: 13, name: 'Galileo', invent:'Telescopio' },
    { id: 14, name: 'Isaac Newton', invent: "Gravedad Universal" },

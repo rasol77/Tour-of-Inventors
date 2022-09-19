@@ -1,11 +1,23 @@
 <h2>Inventors</h2>
+<div>
+    <label for="new-hero">Nombre Inventor</label>
+    <input type="new-hero" #heroName>
+
+    <!-- ((click)="pasa el valor de entrada a add() y luego borra el aporte") -->
+    <button type="button" class="add-button" (click)="add(heroName.value);
+heroName.value=''">
+Add Inventor
+</button>
+</div>
+
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
        <a routerLink="/detail/{{hero.id}}">
             <span class="badge">{{hero.id}} </span> 
             <span class="name">{{hero.name}}</span>
         </a>
-        
+        <button type="button" class="delete" title="delete Inventor"
+        (click)="delete(hero)">X</button>
     </li>
 
 </ul>

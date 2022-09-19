@@ -8,27 +8,32 @@ h2{
     max-width: 1000px;
     
     /*flexbox */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
     align-content: flex-start;
+    align-items: flex-start;
 }
 
 a{
-    background-color: #3f525c;
+    background-color: #947928;
     border-radius: 2px;
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
     display: inline-block;
-    color:#fff;
+    color:#000;
     text-align: center;
     width: 100%;
     min-width: 70px;
     margin: .5rem auto;
     box-sizing: border-box;
+    border-radius: 1rem;
 
     /*flexbox */
     order: 0;
@@ -46,4 +51,5 @@ a{
 
 a:hover{
     background-color: #000;
+    color: white;
 }
